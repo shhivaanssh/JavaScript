@@ -1,11 +1,80 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Functions in JS
-        </title>
-    </head>
-    <body>
-        <script></script>
-    </body>
+
+<head>
+    <title>
+        Rock Paper Scissors
+    </title>
+</head>
+
+<body>
+    <p>Rock Paper Scissors</p>
+    <button onclick="
+        result('Rock');
+        ">Rock</button>
+    <button onclick="
+        result('Paper');
+        ">Paper</button>
+    <button onclick="
+        result('Scissors')
+        ">Scissors</button>
+    <script>
+        function move() {
+            const num = Math.random();
+            let comp = '';
+            if (num >= 0 && num < 1 / 3) {
+                comp = 'Rock'
+            }
+            else if (num >= 1 / 3 && num < 2 / 3) {
+                comp = 'Paper'
+            }
+            else if (num >= 2 / 3 && num < 1) {
+                comp = 'Scissors'
+            }
+            return comp;
+        }
+        function result(playermove) {
+            const comp = move();
+            if (playermove === 'Rock') {
+                let res = '';
+                if (comp === 'Rock') {
+                    res = 'Tie';
+                }
+                else if (comp === 'Paper') {
+                    res = 'You Lose';
+                }
+                else if (comp === 'Scissors') {
+                    res = 'You Win';
+                }
+            }
+
+            else if (playermove === 'Paper') {
+                let res = '';
+                if (comp === 'Rock') {
+                    res = 'You Win';
+                }
+                else if (comp === 'Paper') {
+                    res = 'Tie';
+                }
+                else if (comp === 'Scissors') {
+                    res = 'You Loose';
+                }
+            }
+
+            else if (playermove === 'Scissors') {
+                let res = '';
+                if (comp === 'Rock') {
+                    res = 'You Loose';
+                }
+                else if (comp === 'Paper') {
+                    res = 'You Win';
+                }
+                else if (comp === 'Scissors') {
+                    res = 'Tie';
+                }
+            }
+            alert(`You choosed ${playermove} , Computer choosed ${comp}, ${res}`);
+        }
+    </script>
+</body>
+
 </html>
