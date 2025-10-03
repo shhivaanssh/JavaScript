@@ -1,0 +1,86 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+        </script>
+        <p>Rock Paper Scissors</p>
+        <button onclick="
+        const num=Math.random();
+        let comp='';
+        if(num>=0 && num<1/3){
+            comp='Rock'
+        }
+        else if(num>=1/3 && num<2/3){
+            comp='Paper'
+        }
+        else if(num>=2/3 && num<1){
+            comp='Scissors'
+        }
+         let res='';
+         if(comp==='Rock'){
+            res='Tie';
+         }
+         else if(comp==='Paper'){
+            res='You Lose';
+         }
+         else if(comp==='Scissors'){
+            res='You Win';
+         }
+         alert(`You choosed Rock , Computer choosed ${comp}, ${res}`);
+
+        ">Rock</button>
+        <button onclick="
+        const num=Math.random();
+        let comp='';
+        if(num>=0 && num<1/3){
+            comp='Rock'
+        }
+        else if(num>=1/3 && num<2/3){
+            comp='Paper'
+        }
+        else if(num>=2/3 && num<1){
+            comp='Scissors'
+        }
+         let res='';
+         if(comp==='Rock'){
+            res='You Win';
+         }
+         else if(comp==='Paper'){
+            res='Tie';
+         }
+         else if(comp==='Scissors'){
+            res='You Loose';
+         }
+         alert(`You choosed Paper , Computer choosed ${comp}, ${res}`);
+
+
+        ">Paper</button>
+        <button onclick="
+        const num=Math.random();
+        let comp='';
+        if(num>=0 && num<1/3){
+            comp='Rock'
+        }
+        else if(num>=1/3 && num<2/3){
+            comp='Paper'
+        }
+        else if(num>=2/3 && num<1){
+            comp='Scissors'
+        }
+         let res='';
+         if(comp==='Rock'){
+            res='You Loose';
+         }
+         else if(comp==='Paper'){
+            res='You Win';
+         }
+         else if(comp==='Scissors'){
+            res='Tie';
+         }
+         alert(`You choosed Sissors , Computer choosed ${comp}, ${res}`);
+
+
+        ">Scissors</button>
+    </body>
+</html>
